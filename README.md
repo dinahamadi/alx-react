@@ -1,1 +1,1 @@
-a redme file for the repository
+a readme file for the repository
