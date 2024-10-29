@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production"
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +15,6 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "jqeury": "0.0.1-security",
     "jquery": "^3.7.1",
     "lodash": "^4.17.21"
   }
