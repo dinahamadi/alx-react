@@ -16,10 +16,12 @@ module.exports = {
             {
                 test: /\.(png|jpe?g|gif|svg)$/,
                 use: [
+                    "file-loader",
                     {
-                        loader: 'file-loader',
+                        loader: "image-webpack-loader",
                         options: {
-                            name: '[path][name].[ext]',
+                            bypassOnDebug: true,
+                            disable: true,
                         },
                     },
                 ],
