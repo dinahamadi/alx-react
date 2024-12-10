@@ -4,7 +4,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, '../dist'),
         publicPath: '/',
     },
     module: {
@@ -24,7 +24,7 @@ module.exports = {
                 test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
                 use: [
                     {
-                        loader: 'image-webpack-loader',
+                        loader: 'file-loader',
                         options: {
                             name: '[name].[hash].[ext]',
                             outputPath: 'assets/',
@@ -40,10 +40,10 @@ module.exports = {
     },
     devServer: {
         static: {
-            directory: path.join(__dirname, './dist'),
+            directory: path.join(__dirname, '../dist'),
         },
         hot: true,
     },
     devtool: 'inline-source-map',
     mode: 'development',
-};
+}
