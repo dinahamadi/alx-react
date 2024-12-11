@@ -1,0 +1,8 @@
+/* Body styles */
+.App-body {
+    height: 50%;
+    padding: 20px;
+    border-bottom: var(--border-bottom);
+    color: black;
+    text-align: left;
+}

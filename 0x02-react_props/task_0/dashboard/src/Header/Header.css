@@ -1,0 +1,14 @@
+/* header styles */
+.App-header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: red;
+    border-bottom: var(--border-bottom);
+}
+
+    .App-header img {
+        height: 25%;
+        width: 25%;
+    }
